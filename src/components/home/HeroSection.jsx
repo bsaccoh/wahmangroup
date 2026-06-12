@@ -81,13 +81,13 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="flex items-center justify-center gap-3 mb-6"
+            className="flex items-center justify-center gap-3 mb-4 md:mb-6"
           >
-            <div className="h-px w-8 bg-gold/50" />
-            <span className="text-gold text-sm font-semibold uppercase tracking-[0.3em] font-body">
+            <div className="h-px w-6 bg-gold/50" />
+            <span className="text-gold text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] font-body">
               Diversified Conglomerate
             </span>
-            <div className="h-px w-8 bg-gold/50" />
+            <div className="h-px w-6 bg-gold/50" />
           </motion.div>
 
           {/* Main Heading */}
@@ -95,7 +95,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3 md:mb-6 leading-tight"
           >
             Investing in Africa's{' '}
             <span className="text-gradient-gold">Future</span>.{' '}
@@ -109,10 +109,15 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
-            className="text-white/60 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body leading-relaxed"
+            className="text-white/60 text-sm sm:text-lg md:text-xl max-w-2xl mx-auto mb-7 md:mb-10 font-body leading-relaxed px-2 sm:px-0"
           >
-            A multi-sector conglomerate driving growth across mining, energy, agriculture,
-            real estate, aviation, and trade — building bridges between Africa and the world.
+            <span className="sm:hidden">
+              Mining, energy, agriculture, real estate, aviation &amp; trade — across Africa and the world.
+            </span>
+            <span className="hidden sm:inline">
+              A multi-sector conglomerate driving growth across mining, energy, agriculture,
+              real estate, aviation, and trade — building bridges between Africa and the world.
+            </span>
           </motion.p>
 
           {/* CTA Buttons */}
@@ -120,12 +125,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
           >
-            <Button to="/sectors" variant="primary" size="lg">
+            <Button to="/sectors" variant="primary" size="md" className="w-full sm:w-auto sm:!px-8 sm:!py-4">
               Explore Our Portfolio
             </Button>
-            <Button to="/contact" variant="secondary" size="lg">
+            <Button to="/contact" variant="secondary" size="md" className="w-full sm:w-auto sm:!px-8 sm:!py-4">
               Partner With Us
             </Button>
           </motion.div>
