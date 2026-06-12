@@ -39,8 +39,8 @@ const NewsDetail = () => {
               className="absolute inset-0 bg-cover"
               style={{ backgroundImage: `url('${article.image}')`, backgroundPosition: article.imagePosition || 'center' }}
             />
-            <div className="absolute inset-0 bg-navy-dark/55" />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 to-transparent" />
+            <div className="absolute inset-0 bg-navy-dark/68" />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 to-transparent" />
           </div>
 
           <div className="container-custom relative z-10">
